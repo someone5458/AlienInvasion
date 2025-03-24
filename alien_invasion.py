@@ -15,10 +15,10 @@ from scoreboard import ScoreBoard
 from alien_bullet import AlienBullet
 
 class AlienInvasion():
-    """клас для керування ресурсами та поведінкою гри"""
+    """класс для управления ресурсами и поведением игры"""
 
     def __init__(self):
-        """ініціює гровий процес та створює ігрові ресурси"""
+        """инициирует игровой процесс и создает игровые ресурсы"""
         pygame.init()
         self.settings = Settings()
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
@@ -46,7 +46,7 @@ class AlienInvasion():
         self.play_button = Button(self, "Play")
 
     def run_game(self):
-        """запуск основного циклу гри"""
+        """запуск основного цикла игры"""
         while True:
             #функция должна выполнятся всегда, так как программа должна считывать действия пользователя
             self._check_ivents()
@@ -60,7 +60,7 @@ class AlienInvasion():
             self._update_screen()
     
     def _check_ivents(self):
-        """відстеження подій клавіатури та миши"""
+        """отслеживание событий клавиатуры и мыши"""
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
