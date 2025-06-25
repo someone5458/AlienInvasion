@@ -14,7 +14,9 @@ Your mission: survive waves of alien ships, dodge enemy bullets, and beat your h
 •	A-D — Move spaceship
 •	Space — Shoot
 •	ESC — Quit game
+•	Q – Pause game
 •	Mouse — Navigate menus
+
 
 # Game Stats
 Game statistics such as:
